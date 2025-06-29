@@ -1,0 +1,1 @@
+export { CheckPasswordForm } from './CheckPasswordForm';

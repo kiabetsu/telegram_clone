@@ -1,0 +1,28 @@
+$primary-color: rgb(51, 144, 236) !default;
+$primary-color-shade: rgb(74, 149, 214);
+$background: #fff !default;
+$color-text: #000 !default;
+$color-text-secondary: rgb(112, 117, 121);
+
+$roboto:
+  'Roboto',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Apple Color Emoji',
+  'Segoe UI',
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  'Fira Sans',
+  'Droid Sans',
+  'Helvetica Neue',
+  sans-serif;
+$font-wight-normal: 400;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+
+$border-width: 1px;
+$color-border-input: rgb(218, 220, 224);
+$border-radius: 0.75rem;
+$color-placeholder: #a2acb4;
