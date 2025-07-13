@@ -25,7 +25,7 @@ export const useChatLayout = () => {
     setSidebarWidth(newWidth);
   }, []);
 
-  const startDrag = React.useCallback((e: Event) => {
+  const startDrag = React.useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(true);
   }, []);
