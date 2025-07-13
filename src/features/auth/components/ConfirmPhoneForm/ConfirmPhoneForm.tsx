@@ -10,6 +10,7 @@ export const ConfirmPhoneForm = () => {
       onChange={(e) => handleSubmit({ code: e.target.value })}
       maxLength={5}
       isLoading={isLoading}
+      autoFocus
     />
   );
 };

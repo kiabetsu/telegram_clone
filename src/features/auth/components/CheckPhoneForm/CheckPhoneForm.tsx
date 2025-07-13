@@ -15,6 +15,7 @@ export const CheckPhoneForm = () => {
         isLoading={isLoading}
         {...restRegister}
         ref={setRefs}
+        autoFocus
       />
 
       {/*TODO: add checkbox 'keep me signed in' */}

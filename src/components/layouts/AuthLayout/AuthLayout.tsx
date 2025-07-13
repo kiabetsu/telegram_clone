@@ -2,7 +2,6 @@ import React from 'react';
 import { Pencil } from 'lucide-react';
 
 import styles from './AuthLayout.module.scss';
-import useGlobalAuthStore from '../../../stores/auth.store';
 import { isPhoneNumber, useEditPhoneNumber } from '../../../hooks/useAuthPage';
 
 export type AuthLayoutProps = {
@@ -14,16 +13,7 @@ export type AuthLayoutProps = {
 
 export const AuthLayout = ({ children, logo, title, note }: AuthLayoutProps) => {
   const { editPhoneNumber } = useEditPhoneNumber();
-  //   const { setActiveCheckPhone, setActiveConfirmPhone } = useGlobalAuthStore();
-  //   const editPhoneNumber = () => {
-  //     setActiveCheckPhone(true);
-  //     setActiveConfirmPhone(false);
-  //   };
 
-  //   const isPhoneNumber = (text: string) => {
-  //     const regex = /[0-9]/;
-  //     return regex.test(text);
-  //   };
   return (
     <div className={styles.authLayout}>
       <div className={styles.authContainer}>

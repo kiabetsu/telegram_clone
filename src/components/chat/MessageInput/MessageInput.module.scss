@@ -1,0 +1,40 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--tg-theme-secondary-bg-color, #ffffff);
+  border-radius: 20px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  font-size: 15px;
+  outline: none;
+  color: var(--tg-theme-text-color, #000000);
+
+  &::placeholder {
+    color: var(--tg-theme-hint-color, #999999);
+  }
+}
+
+.attachmentButton,
+.sendButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--tg-theme-accent-text-color, #0088cc);
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}

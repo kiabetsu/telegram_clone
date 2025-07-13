@@ -13,6 +13,7 @@ export const CheckPasswordForm = () => {
         isLoading={isLoading}
         error={errors.password}
         {...register('password')}
+        autoFocus
       />
       <Button type="submit" isLoading={isLoading}>
         Log in

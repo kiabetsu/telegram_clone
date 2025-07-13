@@ -1,4 +1,5 @@
 import { AuthLayout } from '../../components/layouts';
+import { ChatLayout } from '../../features/chat/components/ChatLayout';
 import {
   RegisterForm,
   CheckPhoneForm,
@@ -51,6 +52,8 @@ export const AuthPage = () => {
           <CheckPasswordForm />
         </AuthLayout>
       )}
+
+      <ChatLayout />
     </>
   );
 };

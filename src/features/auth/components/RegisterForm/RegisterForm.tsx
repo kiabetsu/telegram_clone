@@ -9,7 +9,7 @@ export const RegisterForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <Input label="Username" error={errors.username} {...register('username')} />
+      <Input label="Username" error={errors.username} {...register('username')} autoFocus />
       <Input label="Email" type="email" error={errors.email} {...register('email')} />
       <Input label="Password" type="password" error={errors.password} {...register('password')} />
       <Button type="submit" isLoading={isLoading}>
