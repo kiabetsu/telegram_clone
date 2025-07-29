@@ -1,0 +1,92 @@
+@use '../../../styles/variables' as *;
+
+.chatItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 72px;
+  padding: 9px;
+  border-radius: $border-radius;
+  min-width: 0;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(246, 241, 241);
+  }
+
+  .image {
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    margin-right: 0.5em;
+    flex-shrink: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+
+    .infoRow,
+    .subtitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      max-width: 100%;
+      color: $color-text-secondary;
+      width: 100%;
+      min-width: 0;
+      gap: 0.5em;
+
+      .lastMessage {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        min-width: 0;
+      }
+
+      .lastMessageMeta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .messageOutgoingStatus {
+          svg {
+            color: $color-text-meta-colored;
+          }
+        }
+      }
+
+      h3 {
+        color: $color-text;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        min-width: 0;
+      }
+
+      .chatBadge {
+        // width: 24px;
+        // height: 24px;
+        border-radius: 0.75rem;
+        background-color: #00c73e;
+        color: $color-text-white;
+        padding: 0 0.4375rem;
+        line-height: 1.5625rem;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 500;
+
+        .unreadyMessageCount {
+        }
+      }
+    }
+  }
+}

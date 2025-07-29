@@ -18,7 +18,7 @@ export const useChatLayout = () => {
     let newWidth = e.clientX - containerRect.left;
 
     // Ограничения: минимум 200, максимум 70% ширины контейнера
-    const minWidth = 200;
+    const minWidth = 300;
     const maxWidth = Math.floor(containerRect.width * 0.7);
 
     newWidth = Math.max(minWidth, Math.min(newWidth, maxWidth));

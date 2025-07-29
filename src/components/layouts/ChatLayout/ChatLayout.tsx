@@ -1,8 +1,8 @@
 import styles from './ChatLayout.module.scss';
 
 type DualChildrenProps = {
-  sidebar?: React.ReactNode;
-  content?: React.ReactNode;
+  sidebar?: React.ReactElement;
+  content?: React.ReactElement;
 };
 
 type ChatLayoutProps = {
